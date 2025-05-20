@@ -1,5 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: black;
+  width: 500px;
+  height: 700px;
+  padding: 20px;
+}
+.display {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  margin-bottom: 30px;
+}
+
+.numpad {
+  width: 100%;
+  height: 80%;
+  text-align: center;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 90px) auto;
+  grid-template-rows: repeat(5, 90px);
+  gap: 20px;
+}
+
+.controls {
+  display: contents;
+}
+
+.control-buttons-AC {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.controls > .control-buttons-BK {
+  width: 100%;
+  grid-column: 2 / 4;
+  grid-row: 1;
+}
+
+.numpad-block {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+}
+.numpad-block {
+  line-height: 90px;
+  font-weight: 600;
+  font-size: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* side-numpad */
+.side-numpad {
+  grid-column: 4;
+  grid-row: 1 / 4;
+  width: 100%;
+  height: 100%;
+}
+.side-numpad {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-numpad-block {
+  width: 100%;
+  height: 100%;
+}
+
+/* Layout fix */
+
+.numpad-0 {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.numpad-plus-minus {
+  grid-column: 2;
+  grid-row: 5;
+}
+.numpad-dot {
+  grid-column: 3;
+  grid-row: 5;
 }
