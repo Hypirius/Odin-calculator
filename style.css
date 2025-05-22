@@ -112,3 +112,7 @@ body {
   grid-column: 3;
   grid-row: 5;
 }
+
+.side-display {
+  display: none;
+}
